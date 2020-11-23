@@ -1,6 +1,6 @@
 {
   "name": "node-securecookie",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "securecookie implementation for Node.js",
   "repository": "github:fmatzy/node-securecookie",
   "author": "fmatzy",
