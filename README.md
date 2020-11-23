@@ -10,6 +10,27 @@ The main purpose of this package is to provide encoding and decoding capabilitie
 $ npm install node-securecookie
 ```
 
+## Usage
+
+```typescript
+import { SecureCookie } from 'node-securecookie';
+
+// pass hash key and block key
+const sc = new SecureCookie('12345', '1234567890123456');
+
+const value = {
+  foo: 'bar',
+};
+
+const encoded = sc.encode('cookie-name', value);
+console.log(encoded);
+
+const decoded = sc.decode<Record<string, string>>('cookie-name', encoded);
+console.log(decoded);
+```
+
+See `/example` for the sample code that actually works using [express.js](https://github.com/expressjs/express).
+
 ## TODO
 
 - [ ] Make errors easear to handle
