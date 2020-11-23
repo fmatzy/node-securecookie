@@ -10,6 +10,12 @@ The main purpose of this package is to provide encoding and decoding capabilitie
 $ npm install node-securecookie
 ```
 
+## TODO
+
+- [ ] Make errors easear to handle
+- [ ] Do more tests
+- [ ] Support `encoding/gob` serializer
+
 ## License
 
 MIT &copy; fmatzy
